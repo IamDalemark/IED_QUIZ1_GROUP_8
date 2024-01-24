@@ -1,0 +1,602 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+.all{
+  width: 100%;
+  height: 75%;
+  display: grid;
+  display: flex;
+}
+.title{
+  
+  position: absolute;
+  top: 9%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px; 
+  height: 100px;
+  background-image: url(6.png);
+  background-size: cover;
+  background-position: center;
+  border: none;
+}
+.container-1{
+  width: 20%;
+  min-height: 100vh;
+  /* background: #a99bf9; */
+  padding: 10px;
+}
+.card-1{
+  width: 100% - 7px;
+  height: 515px;
+  margin: 100px auto 0;
+}
+.card-1:hover .card-inner-1{
+  transform: rotateY(180deg);
+}
+.card-inner-1{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+.front-1{
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+.front-1, .back-1{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 15px;
+  backface-visibility: hidden;
+}
+.front-1{
+  margin-top: 0%;
+  background: url(WIEGAND.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: white;
+}
+.front-1 h2{
+  margin-bottom: 10%;
+  font-weight: 500;
+}
+.front-1 p{
+  margin-bottom: 30%;
+  color: #484444;
+  font-size: 13px;
+}
+.front-1 button{
+  width: 120px;
+  border: 1px solid #fff;
+  background: transparent;
+  border-radius: 50px;
+  padding: 8px 20px;
+  cursor: pointer;
+  margin-top: 0px;
+  color: white;
+  position: absolute;
+}
+.back-1{
+  background: white;
+  color: #333;
+  padding: 10px 20px;
+  transform: rotateY(180deg);
+}
+.back-1 h1{
+  font-size: 30px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.back-1 span{
+  font-weight: 400;
+}
+.back-1 p{
+  font-size: 12px;
+}
+.back-1 p span{
+  font-weight: 600;
+}
+.row-1{
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.col-1{
+  flex: 1;
+  text-align: center;
+  color: #555;
+  font-size: 12px;
+  position: relative;
+}
+.col-1 h2{
+  font-size: 20px;
+}
+.col-1::after{
+  content: '';
+  width: 1.5px;
+  height: 20px;
+  background: #7800ad;
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
+
+.col-1:last-child::after{
+  display: none;
+}
+.col-1{
+  margin-top: 5px;
+}
+
+.container-2{
+  width: 20%;
+  min-height: 100vh;
+  /* background:  #a99bf9; */
+  padding: 10px;
+}
+.card-2{
+  width: 100% - 7px;
+  height: 515px;
+  margin: 100px auto 0;
+}
+.card-2:hover .card-inner-2{
+  transform: rotateY(180deg);
+}
+.card-inner-2{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+.front-2{
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+.front-2, .back-2{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 15px;
+  backface-visibility: hidden;
+}
+.front-2{
+  margin-top: 0%;
+  background: url(WIEGAND.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: white;
+}
+.front-2 h2{
+  margin-bottom: 10%;
+  font-weight: 500;
+}
+.front-2 p{
+  margin-bottom: 30%;
+  color: #484444;
+  font-size: 13px;
+}
+.front-2 button{
+  width: 120px;
+  border: 1px solid #fff;
+  background: transparent;
+  border-radius: 50px;
+  padding: 8px 20px;
+  cursor: pointer;
+  margin-top: 0px;
+  color: white;
+  position: absolute;
+}
+.back-2{
+  background: white;
+  color: #333;
+  padding: 10px 20px;
+  transform: rotateY(180deg);
+}
+.back-2 h1{
+  font-size: 30px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.back-2 span{
+  font-weight: 400;
+}
+.back-2 p{
+  font-size: 12px;
+}
+.back-2 p span{
+  font-weight: 600;
+}
+.row-2{
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.col-2{
+  flex: 1;
+  text-align: center;
+  color: #555;
+  font-size: 12px;
+  position: relative;
+}
+.col-2 h2{
+  font-size: 20px;
+}
+.col-2::after{
+  content: '';
+  width: 1.5px;
+  height: 20px;
+  background: #7800ad;
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
+
+.col-2:last-child::after{
+  display: none;
+}
+.col-2{
+  margin-top: 5px;
+}
+.container-3{
+  width: 20%;
+  min-height: 100vh;
+  /* background: #a99bf9; */
+  padding: 10px;
+}
+.card-3{
+  width: 100% - 7px;
+  height: 515px;
+  margin: 100px auto 0;
+}
+.card-3:hover .card-inner-3{
+  transform: rotateY(180deg);
+}
+.card-inner-3{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+.front-3{
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+.front-3, .back-3{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 15px;
+  backface-visibility: hidden;
+}
+.front-3{
+  margin-top: 0%;
+  background: url(WIEGAND.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: white;
+}
+.front-3 h2{
+  margin-bottom: 10%;
+  font-weight: 500;
+}
+.front-3 p{
+  margin-bottom: 30%;
+  color: #484444;
+  font-size: 13px;
+}
+.front-3 button{
+  width: 120px;
+  border: 1px solid #fff;
+  background: transparent;
+  border-radius: 50px;
+  padding: 8px 20px;
+  cursor: pointer;
+  margin-top: 0px;
+  color: white;
+  position: absolute;
+}
+.back-3{
+  background: white;
+  color: #333;
+  padding: 10px 20px;
+  transform: rotateY(180deg);
+}
+.back-3 h1{
+  font-size: 30px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.back-3 span{
+  font-weight: 400;
+}
+.back-3 p{
+  font-size: 12px;
+}
+.back-3 p span{
+  font-weight: 600;
+}
+.row-3{
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.col-3{
+  flex: 1;
+  text-align: center;
+  color: #555;
+  font-size: 12px;
+  position: relative;
+}
+.col-3 h2{
+  font-size: 20px;
+}
+.col-3::after{
+  content: '';
+  width: 1.5px;
+  height: 20px;
+  background: #7800ad;
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
+
+.col-3:last-child::after{
+  display: none;
+}
+.col-3{
+  margin-top: 5px;
+}
+.container-4{
+  width: 20%;
+  min-height: 100vh;
+  /* background: #a99bf9; */
+  padding: 10px;
+}
+.card-4{
+  width: 100% - 7px;
+  height: 515px;
+  margin: 100px auto 0;
+}
+.card-4:hover .card-inner-4{
+  transform: rotateY(180deg);
+}
+.card-inner-4{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+.front-4{
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+.front-4, .back-4{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 15px;
+  backface-visibility: hidden;
+}
+.front-4{
+  margin-top: 0%;
+  background: url(WIEGAND.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: white;
+}
+.front-4 h2{
+  margin-bottom: 10%;
+  font-weight: 500;
+}
+.front-4 p{
+  margin-bottom: 30%;
+  color: #484444;
+  font-size: 13px;
+}
+.front-4 button{
+  width: 120px;
+  border: 1px solid #fff;
+  background: transparent;
+  border-radius: 50px;
+  padding: 8px 20px;
+  cursor: pointer;
+  margin-top: 0px;
+  color: white;
+  position: absolute;
+}
+.back-4{
+  background: white;
+  color: #333;
+  padding: 10px 20px;
+  transform: rotateY(180deg);
+}
+.back-4 h1{
+  font-size: 30px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.back-4 span{
+  font-weight: 400;
+}
+.back-4 p{
+  font-size: 12px;
+}
+.back-4 p span{
+  font-weight: 600;
+}
+.row-4{
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.col-4{
+  flex: 1;
+  text-align: center;
+  color: #555;
+  font-size: 12px;
+  position: relative;
+}
+.col-4 h2{
+  font-size: 20px;
+}
+.col-4::after{
+  content: '';
+  width: 1.5px;
+  height: 20px;
+  background: #7800ad;
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
+
+.col-4:last-child::after{
+  display: none;
+}
+.col-4{
+  margin-top: 5px;
+}
+.container-5{
+  width: 20%;
+  min-height: 100vh;
+  /* background: #a99bf9;  */
+  padding: 10px;
+}
+.card-5{
+  width: 100% - 7px;
+  height: 515px;
+  margin: 100px auto 0;
+}
+.card-5:hover .card-inner-5{
+  transform: rotateY(180deg);
+}
+.card-inner-5{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+.front-5{
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+.front-5, .back-5{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 15px;
+  backface-visibility: hidden;
+}
+.front-5{
+  margin-top: 0%;
+  background: url(WIEGAND.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: white;
+}
+.front-5 h2{
+  margin-bottom: 10%;
+  font-weight: 500;
+}
+.front-5 p{
+  margin-bottom: 30%;
+  color: #484444;
+  font-size: 13px;
+}
+.front-5 button{
+  width: 120px;
+  border: 1px solid #fff;
+  background: transparent;
+  border-radius: 50px;
+  padding: 8px 20px;
+  cursor: pointer;
+  margin-top: 0px;
+  color: white;
+  position: absolute;
+}
+.back-5{
+  background: white;
+  color: #333;
+  padding: 10px 20px;
+  transform: rotateY(180deg);
+}
+.back-5 h1{
+  font-size: 30px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.back-5 span{
+  font-weight: 400;
+}
+.back-5 p{
+  font-size: 12px;
+}
+.back-5 p span{
+  font-weight: 600;
+}
+.row-5{
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.col-5{
+  flex: 1;
+  text-align: center;
+  color: #555;
+  font-size: 12px;
+  position: relative;
+}
+.col-5 h2{
+  font-size: 20px;
+}
+.col-5::after{
+  content: '';
+  width: 1.5px;
+  height: 20px;
+  background: #7800ad;
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
+
+.col-5:last-child::after{
+  display: none;
+}
+.col-5{
+  margin-top: 5px;
+}
+
